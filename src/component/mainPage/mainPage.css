@@ -1,0 +1,292 @@
+.all-main-page{
+    width: 100%;
+    background-color: #F5F5F5;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.layout-margincontainer{
+    width: 80%;
+    height: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-between;
+}
+.image-slide{
+    height: 100%;
+    width: 100%; 
+}
+.indikator-all-main{
+    width: 75%;
+    /* height: 500px; */
+    /* background-color: blueviolet; */
+    display: flex;
+    flex-direction: column;
+}
+.link-tautan-all {
+    height: max-content;
+    width: 25%;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
+    /* justify-content: center; */
+}
+.title1{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+.indikator-box {
+    width: 87%;
+    /* height: 300px; */
+    background-color: white;
+    display: flex;
+    /* padding: 20px; */
+    flex-wrap: wrap;
+    flex-direction: row;
+    border-radius: 10px;
+}
+.main-iconic{
+    height: 150px;
+    width: 130px;
+    background-color: white;
+    flex-direction: column;
+    display: flex;
+    border-radius: 20px;
+    margin: 15px;
+    /* margin-right: 20px; */
+    margin-bottom: 20px;
+    margin-left: 28px;
+    box-shadow: 0px 9px 17px 1px rgba(97,96,96,0.51);
+    -webkit-box-shadow: 0px 9px 17px 1px rgba(97,96,96,0.51);
+    -moz-box-shadow: 0px 9px 17px 1px rgba(97,96,96,0.51);
+    text-decoration: none;
+    color: black;
+}
+.icon-foto {
+    height: 60%;
+    width: 100%;
+    /* background-color: blue; */
+    border-start-start-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.icon-foto img {
+    border-start-start-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.title-in-the-box{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 40%;
+    width: 100%;
+    font-size: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+.link-container{
+    justify-content: center;
+    /* margin: 0; */
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.website-side{
+    width: 100%;
+    height: 235px;
+    /* background-color: brown; */
+    flex-direction: column;
+    display: flex;
+}
+.judul-link {
+    margin-bottom: 10px;
+    font-size: 20px
+}
+.website-logo {
+    width: 100%;
+    height: 180px;
+    /* background-color: blueviolet; */
+    flex-direction: column;
+    display: flex; 
+}
+.wa-side{
+    width: 100%;
+    height: 360px;
+    /* background-color: aqua; */
+    flex-direction: column;
+    display: flex;
+}
+.wa-logo{
+    width: 100%;
+    height: 200px;
+    /* background-color: brown; */
+    flex-direction: column;
+    display: flex;
+}
+.bottom-layout{
+    width: 100%;
+    height: 1400px;
+    /* background-color: rgb(134, 134, 11); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.kegiatan-layout {
+    width: 80%;
+    height: 1500px;   
+    /* background-color: rgb(255, 255, 255); */
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    flex-direction: column;
+}
+.kegiatan {
+    width: 100%;
+    height: 500px;
+    /* background-color: aqua; */
+    margin-bottom: 10x;
+}
+.text-shadow {
+    background-color: rgba(0,0,0, 0.4);
+    /* width: 80%; */
+    /* margin:0;
+    padding: 0; */
+    /* height: 100%; */
+    /* justify-content: center;
+    align-items: center; */
+    /* display: flex; */
+    /* flex-direction: column; */
+}
+.video-dan-peta {
+    width: 100%;
+    height: 800px;   
+    /* background-color: rgb(211, 15, 15); */
+    display: flex;
+    flex-direction: row;
+}
+.peta-layout {
+    width: 45%;
+    height: 800px;
+    /* background-color: chartreuse; */
+    display: flex;
+    flex-direction: column;
+}
+.video-layout {
+    width: 55%;
+    height: 700px;
+    /* background-color: rgb(124, 167, 81); */
+    display: flex;
+    flex-direction: column;
+}
+.video {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    margin-bottom: 70px;
+    width: 500px;
+    /* height: 700px; */
+}
+.peta{
+    width: 100%;
+    height: 900px;
+    /* background-color: aliceblue; */
+}
+.iframe-map {
+    width:100%;
+    height:100%;
+}
+@media screen and (max-width: 1120px) {
+    .indikator-box {
+        width: 87%;
+        /* height: 300px; */
+        background-color: white;
+        display: flex;
+        /* padding: 20px; */
+        flex-wrap: wrap;
+        flex-direction: row;
+        border-radius: 10px;
+        justify-content: center;
+    }
+    .video-dan-peta {
+        width: 100%;
+        /* height: max-content;    */
+        background-color: rgb(211, 15, 15);
+        display: flex;
+        flex-direction: column;
+    }
+    .video {
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        margin-bottom: 50px;
+        align-items: center;
+    }
+    .peta-layout {
+        width: 100%;
+        /* height: max-content; */
+        /* background-color: chartreuse; */
+        display: flex;
+        flex-direction: column;
+    }
+    .peta{
+        width: 100%;
+        height: 100%;
+        /* background-color: aliceblue; */
+    }
+    .iframe-map {
+        width:100%;
+        /* height:600px; */
+    }
+}
+@media screen and (max-width: 1015px) {
+    .layout-margincontainer{
+        width: 80%;
+        height: 100%;
+        /* background-color: aqua; */
+        display: flex;
+        flex-direction: column !important;
+        justify-content: space-between;
+    }
+    .indikator-all-main{
+        width: 100%;
+        /* height: 500px; */
+        /* background-color: blueviolet; */
+        display: flex;
+        flex-direction: column;
+    }
+    .link-tautan-all {
+        height: max-content;
+        width: 100%;
+        /* background-color: blue; */
+        display: flex;
+        flex-direction: column;
+        padding-left: 10px;
+        padding-right: 10px;
+        /* justify-content: center; */
+    }
+    .link-tautan-all1 {
+        height: max-content;
+        width: 100%;
+        /* background-color: blue; */
+        display: flex;
+        flex-direction: row;
+        padding-left: 10px;
+        padding-right: 10px;
+        justify-content: space-between;
+    }
+    .video-dan-peta {
+        width: 100%;
+        height: max-content;   
+        /* background-color: rgb(211, 15, 15); */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
