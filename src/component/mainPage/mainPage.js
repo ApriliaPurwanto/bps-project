@@ -219,15 +219,15 @@ const MainPage = () => {
                             <div className="video">
                             <Iframe url="https://www.youtube.com/embed/s1ail01pLVQ"
                                 display="initial"
-                                // width={500}
-                                // height={320}
+                                width={500}
+                                height={320}
                                 position="relative"/>
                             </div>
                             <div className="video">
                             <Iframe url="https://www.youtube.com/embed/_9kNPDahc_Q"
                                 display="initial"
-                                // width={500}
-                                // height={320}
+                                width={500}
+                                height={320}
                                 position="relative"/>
                             </div>
                         </div>
@@ -235,7 +235,7 @@ const MainPage = () => {
                             <div className="title1">
                                 Lokasi
                             </div>
-                            <div class="peta">
+                            <div className="peta">
                                 <iframe className="iframe-map"
                                 src="https://maps.google.com/maps?q=badan%20pusat%20statistik%20kota%20bandar%20lampung&t=&z=13&ie=UTF8&iwloc=&output=embed"
                                 frameBorder={0}
