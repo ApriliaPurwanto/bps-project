@@ -10,7 +10,7 @@ import {
 import HeaderMenu from './component/headerMenu/headerMenu';
 import Header2 from './component/header2/header2';
 import MainPage from './component/mainPage/mainPage';
-import Page2 from './component/page2-mainpage/page2';
+import Inflasi from './component/inflasi/inflasi';
 import Footer from './component/footer/footer';
 
 function App() {
@@ -21,9 +21,8 @@ function App() {
       
       <Routes>
             <Route path="/" exact element={<MainPage/>} />
-            <Route path="/indikator/:id" element={<Page2/>} />    
+            <Route path="/indikator/:id" element={<Inflasi/>} />    
       </Routes>
-      {/* <Page2/> */}
       <Footer/>
     </div>
    

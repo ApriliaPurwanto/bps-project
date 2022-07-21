@@ -47,11 +47,26 @@
     margin-top: 25px;
     margin-bottom: 25px;
 }
-.grafik-table {
+.grafik {
     background-color: white;
     width: 100%;
     height: max-content;
     padding: 25px;
     margin-top: 25px;
     margin-bottom: 25px;
+}
+.tablee {
+    background-color: white;
+    width: 100%;
+    height: max-content;
+    padding: 25px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.tablee a {
+    text-decoration: none;
+    color: black;
+}
+.tablee a:hover {
+    color: grey;
 }
