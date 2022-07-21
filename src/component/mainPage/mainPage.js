@@ -110,7 +110,9 @@ const MainPage = () => {
                                 <img src={require('../../asset/photos/indikator/melekhuruf.png')} width="100%" height="100%"></img>
                             </div>
                             <div className="title-in-the-box">
-                                ANGKA MELEK HURUF
+                                ANGKA
+                                <br/>
+                                MELEK HURUF
                             </div>
                         </Link>
 
