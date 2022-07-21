@@ -269,7 +269,7 @@ const MainPage = () => {
                                     Publikasi
                                 </div>
                                 <div className="publikasi-logo">
-                                    <a href="https://wa.me/6281996684189" target="_blank"><img src={require('./siadin.png')} width="270" height="320"></img></a>
+                                    <a href="https://wa.me/6281996684189" target="_blank"><img src={require('./siadin.png')} width="450" height="320"></img></a>
                                 </div>
                             </div>
                             <div className="title1">

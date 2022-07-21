@@ -12,6 +12,7 @@ import Header2 from './component/header2/header2';
 import MainPage from './component/mainPage/mainPage';
 import Inflasi from './component/inflasi/inflasi';
 import Footer from './component/footer/footer';
+import Penduduk from './component/penduduk/penduduk';
 
 function App() {
   return (
@@ -21,7 +22,8 @@ function App() {
       
       <Routes>
             <Route path="/" exact element={<MainPage/>} />
-            <Route path="/indikator/:id" element={<Inflasi/>} />    
+            <Route path="/indikator/Inflasi" element={<Inflasi/>} />    
+            <Route path="/indikator/Penduduk" element={<Penduduk/>} />
       </Routes>
       <Footer/>
     </div>
