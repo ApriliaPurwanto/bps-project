@@ -1,7 +1,7 @@
 import React from "react";
 import { icons } from "react-icons";
 import './headerMenu.css';
-import {SiGmail, SiInstagram, SiTwitter, SiFacebook, SiYoutube} from "react-icons/si";
+import {SiGmail, SiInstagram, SiTwitter, SiFacebook, SiYoutube, SiWhatsapp} from "react-icons/si";
 import { Link } from "react-router-dom";
 
 
@@ -31,13 +31,8 @@ const HeaderMenu = () => {
                         </a>
                     </div>
                     <div className="sosmed">
-                        <a href="" target="_blank">
-                        <SiTwitter color={"white"}/>
-                        </a>
-                    </div>
-                    <div className="sosmed">
-                        <a href="" target="_blank">
-                        <SiFacebook color={"white"}/>
+                        <a href="https://wa.me/6281996684189" target="_blank">
+                        <SiWhatsapp color={"white"}/>
                         </a>
                     </div>
                 </div>

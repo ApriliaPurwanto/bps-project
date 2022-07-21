@@ -17,7 +17,7 @@ const MainPage = () => {
                             pathname: "/indikator/Inflasi",
                         }} className="main-iconic">
                             <div className="icon-foto">
-                                <img src={require('../../asset/photos/indikator/inflasi.png')} width="100%" height="100%"></img>
+                                <img src={require('../../asset/photos/indikator/inflasii.png')} width="100%" height="100%"></img>
                             </div>
                             <div className="title-in-the-box">
                                 INFLASI
@@ -40,7 +40,9 @@ const MainPage = () => {
                                 <img src={require('../../asset/photos/indikator/hidup.png')} width="100%" height="100%"></img>
                             </div>
                             <div className="title-in-the-box">
-                                ANGKA HARAPAN HIDUP
+                                ANGKA
+                                <br/>
+                                HARAPAN HIDUP
                             </div>
                         </Link>
                         <Link to={{
@@ -52,7 +54,9 @@ const MainPage = () => {
                                 <img src={require('../../asset/photos/indikator/ipm.png')} width="100%" height="100%"></img>
                             </div>
                             <div className="title-in-the-box">
-                                INDEKS PEMBANGUNAN MANUSIA
+                                INDEKS PEMBANGUNAN
+                                <br/>
+                                MANUSIA
                             </div>
                         </Link>
                         <Link to={{
@@ -89,13 +93,13 @@ const MainPage = () => {
                         </Link>
 
                         <Link to={{
-                            pathname: "/indikator/PersentaseKemiskinan",
+                            pathname: "/indikator/Pariwisata",
                         }}  className="main-iconic">
                             <div className="icon-foto">
-                                <img src={require('../../asset/photos/indikator/persentasemiskin.png')} width="100%" height="100%"></img>
+                                <img src={require('../../asset/photos/indikator/pariwisata.png')} width="100%" height="100%"></img>
                             </div>
                             <div className="title-in-the-box">
-                                PERSENTASE PENDUDUK MISKIN
+                                PARIWISATA
                             </div>
                         </Link>
 
@@ -117,7 +121,9 @@ const MainPage = () => {
                                 <img src={require('../../asset/photos/indikator/pdrb.png')} width="100%" height="100%"></img>
                             </div>
                             <div className="title-in-the-box">
-                                PDRB HARGA BERLAKU
+                                PDRB
+                                <br/>
+                                HARGA BERLAKU
                             </div>
                         </Link>
 
@@ -128,7 +134,9 @@ const MainPage = () => {
                                 <img src={require('../../asset/photos/indikator/kapita.png')} width="100%" height="100%"></img>
                             </div>
                             <div className="title-in-the-box">
-                                PDRB PER KAPITA HARGA BERLAKU
+                                PDRB PER KAPITA
+                                <br/>
+                                HARGA BERLAKU
                             </div>
                         </Link>
 
@@ -159,7 +167,7 @@ const MainPage = () => {
                     </div>
                     <div className="wa-side">
                         <div className="judul-link">
-                            WhatsApp
+                            Layanan <i>WhatsApp</i>
                         </div>
                         <div className="wa-logo">
                         <a href="https://wa.me/6281996684189" target="_blank"><img src={require('./siadin.png')} width="270" height="284"></img></a>
@@ -182,8 +190,8 @@ const MainPage = () => {
                         alt="First slide"
                         />
                         <Carousel.Caption className="text-shadow">
-                        <h3>SAKERNAS 2021</h3>
-                        <p>Kegiatan Lapangan Survei Angkatan Kerja Nasional bertujuan untuk mengumpulkan dan menyediakan data pokok ketenagakerjaan yang berkesinambungan.</p>
+                        <h3>SAKERNAS 2022</h3>
+                        <p>Kegiatan Lapangan Survei Angkatan Kerja Nasional bertujuan untuk mengumpulkan dan menyediakan data pokok ketenagakerjaan yang berkesinambungan. Dilaksanakan tiap semester</p>
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item interval={500}>
@@ -193,8 +201,8 @@ const MainPage = () => {
                         alt="Second slide"
                         />
                         <Carousel.Caption className="text-shadow">
-                        <h3>SUSENAS 2020</h3>
-                        <p>Kegiatan Pencacahan Survei Sosial Ekonomi Nasional dilakukan untuk memperoleh berbagai indikator kesejahteraan rakyat dan angka kemiskinan.</p>
+                        <h3>SUSENAS 2022</h3>
+                        <p>Kegiatan Pencacahan Survei Sosial Ekonomi Nasional dilakukan untuk memperoleh berbagai indikator kesejahteraan rakyat dan angka kemiskinan. Dilaksanakan tiap semester</p>
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
@@ -206,6 +214,28 @@ const MainPage = () => {
                         <Carousel.Caption className="text-shadow">
                         <h3>Pencacahan Survei IMK Tahunan</h3>
                         <p> Survei Industri Mikro Kecil Tahunan bertujuan untuk mengetahui profil IMK daerah potensi di Indonesia yang dapat digunakan sebagai bahan perencanaan kegiatan ekonomi secara makro.</p>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img
+                        className="kegiatan"
+                        src={require('./pencacahan.jpeg')}
+                        alt="Fourth slide"
+                        />
+                        <Carousel.Caption className="text-shadow">
+                        <h3>SBH 2022</h3>
+                        <p> Survei Biaya Hidup (SBH) merupakan sebuah survei pengeluaran konsumsi rumah tangga di daerah perkotaan (urban area) yang bertujuan untuk mendapatkan pola konsumsi masyarakat.</p>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img
+                        className="kegiatan"
+                        src={require('./splf.jpeg')}
+                        alt="Fifth slide"
+                        />
+                        <Carousel.Caption className="text-shadow">
+                        <h3>Sensus Penduduk 2022 <i>Long Form</i></h3>
+                        <p>Pencacahan sensus penduduk dengan pertanyaan yang lebih rinci dan penggunaan metode sampling.</p>
                         </Carousel.Caption>
                     </Carousel.Item>
                     </Carousel>
