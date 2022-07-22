@@ -20,13 +20,14 @@ import Miskin from './component/miskin/miskin';
 import Pariwisata from './component/pariwisata/pariwisata';
 import MelekHuruf from './component/melekhuruf/melekhuruf';
 import PDRB from './component/PDRB berlaku/pdrb';
+import PDRBKapita from './component/PDRB kapita/pdrb2';
+import Ekonomi from './component/ekonomi/ekonomi';
 
 function App() {
   return (
     <div className='all'>
       <HeaderMenu/>
       <Header2/>
-      
       <Routes>
             <Route path="/" exact element={<MainPage/>} />
             <Route path="/indikator/Inflasi" element={<Inflasi/>} />    
@@ -38,6 +39,8 @@ function App() {
             <Route path="/indikator/Pariwisata" element={<Pariwisata/>} />
             <Route path="/indikator/MelekHuruf" element={<MelekHuruf/>} />
             <Route path="/indikator/PDRB" element={<PDRB/>} />
+            <Route path="/indikator/PDRBperkapita" element={<PDRBKapita/>} />
+            <Route path="/indikator/LajuEkonomi" element={<Ekonomi/>} />
       </Routes>
       <Footer/>
     </div>
