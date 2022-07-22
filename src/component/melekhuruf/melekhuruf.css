@@ -1,0 +1,90 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.all-main-page9{
+    width: 100%;
+    height: max-content;
+    background-color: #F5F5F5;
+    /* #F5F5F5 */
+    /* margin-top: 25px;
+    margin-bottom: 25px; */
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    /* flex-direction: column; */
+}
+.layout-margincontainer9{
+    width: 80%;
+    height: max-content;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    /* justify-content: center; */
+}
+.title{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0;
+    /* margin-bottom: 25px; */
+    /* margin-top: 25px; */
+    /* background-color: brown; */
+    /* width: 200px;
+    height: 200px; */
+}
+.container9{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    /* background-color: orange; */
+    width: 100%;
+    height: max-content;
+    /* justify-content: space-between; */
+}
+.definisi {
+    background-color: white;
+    width: 100%;
+    height: max-content;
+    padding: 25px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.grafik {
+    background-color: white;
+    width: 100%;
+    height: max-content;
+    padding: 25px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.tablee {
+    background-color: white;
+    width: 100%;
+    height: max-content;
+    padding: 25px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.tablee a {
+    text-decoration: none;
+    color: black;
+}
+.tablee a:hover {
+    color: grey;
+}
+.unduh {
+    text-align: right;
+}
+.unduh a {
+    text-decoration: none;
+    color: black;
+}
+.unduh a:hover {
+    color: grey;
+}
+#d3demo {
+    width: 100%;
+    height: 300px;
+    display: flex;
+}

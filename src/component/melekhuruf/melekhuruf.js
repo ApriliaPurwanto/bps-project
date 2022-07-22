@@ -1,5 +1,5 @@
 import React from "react";
-import './inflasi.css'
+import './melekhuruf.css'
 import Iframe from 'react-iframe';
 import { useParams, useLocation } from "react-router";
 import { useCallback, useEffect, useRef, useState } from "react";
@@ -23,80 +23,7 @@ const sample = [
     {category:'December', quantity: 124}
 ]
 
-const Inflasi = () => {
-
-	//Bar 1
-    const d3ChartBar = useRef()
-	// Ref for updating dimention 
-	const [dimensions, setDimensions] = useState({
-		width: window.innerWidth,
-		height: window.innerHeight
-	})
-	// Ref for resize event update
-	const update = useRef(false)
-	const margin = {top: 50, right:30, bottom: 30, left:60}
-
-	function DrawChart(data, dimensions){
-
-		// console.log(dimensions.width, dimensions.height)
-
-		const chartwidth = parseInt(d3.select('#d3demo').style('width')) - margin.left - margin.right
-		const chartheight = parseInt(d3.select('#d3demo').style('height')) - margin.top - margin.bottom
-
-		const svg = d3.select(d3ChartBar.current)
-						.attr('width', chartwidth + margin.left + margin.right)
-						.attr('height', chartheight + margin.top + margin.bottom)
-
-		// x scale
-		const x = d3.scaleBand()
-					.domain(d3.range(data.length))
-					.range([margin.left, chartwidth - margin.right])
-					.padding(0.1)
-
-		svg.append('g')
-			.attr('transform', 'translate(0,'+ chartheight + ')')
-			.call(d3.axisBottom(x).tickFormat(i=>data[i].category).tickSizeOuter(0))
-
-		const max = d3.max(data, function(d){return d.quantity})
-
-		// y scale
-		const y = d3.scaleLinear()
-					.domain([0, 230])
-					.range([chartheight, margin.top])
-
-		svg.append('g')
-			.attr('transform', 'translate(' + margin.left + ',0)')
-			.call(d3.axisLeft(y))
-
-		// Draw bars
-		svg.append('g')
-			.attr('fill','#65f0eb')
-			.selectAll('rect')
-			.data(data)
-			.join('rect')
-				.attr('x', (d,i) => x(i))
-				.attr('y', d => y(d.quantity))
-				.attr('height', d=>y(0)-y(d.quantity))
-				.attr('width', x.bandwidth())
-    }
-		//Bar 1
-		const Bar = () => {
-			// Listen for any resize event update
-			window.addEventListener('resize', ()=>{
-				setDimensions({
-					width: window.innerWidth,
-					height: window.innerHeight
-				})
-	
-				// If resize, remove the previous chart
-				if(update.current){
-					d3.selectAll('g').remove()
-				} else {update.current = true}
-			})
-	
-			// Draw chart using the data and updated dimensions
-			DrawChart(sample,dimensions)
-		}
+const MelekHuruf = () => {
 
 	//Line 1
     const d3ChartLine = useRef()
@@ -189,13 +116,8 @@ const Inflasi = () => {
 			})
 	}
 
-	//Line 2
-    const d3ChartLine2 = useRef()
-
-	const parseDate2 = d3.timeParse('%Y-%m-%d')
-
 	useEffect(()=>{
-		Bar()
+		// Bar()
 		Line()
 		// Bar2()
 		// Line2()
@@ -210,28 +132,28 @@ const Inflasi = () => {
     const {id} = useParams()
 
     return (    
-        <div className="all-main-page2">
-            <div className="layout-margincontainer2">
+        <div className="all-main-page9">
+            <div className="layout-margincontainer9">
                 <div className="title">
-                    INFLASI
+                    ANGKA MELEK HURUF
                 </div>
                 <div className="unduh">
                 <a href="#" onClick={handleCaptureClick}>
                     Unduh Gambar Laman
                 </a>
                 </div>
-                <div className="container2">
+                <div className="container9">
                     <div className="definisi">
-                    	<p><b>Inflasi:</b></p>
-                    	<p>Kenaikan harga barang dan jasa secara umum dimana barang dan jasa tersebut merupakan kebutuhan pokok masyarakat atau turunnya daya jual mata uang suatu negara.</p>
-					</div>
+						<p><b></b></p>
+                        <p>Untuk saat ini belum tersedia</p>
+                    </div>
 
                     <div className="tablee">
                         <p><b>Tabel</b></p>
                         <p>Tabel statis dan dinamis dapat dilihat disini :</p>
                         <ul>
-                            <li><a href="https://bandarlampungkota.bps.go.id/subject/3/inflasi.html#subjekViewTab3" target="_blank">Lihat Tabel Statis</a></li>
-                            <li><a href="https://bandarlampungkota.bps.go.id/subject/3/inflasi.html#subjekViewTab5" target="_blank">Lihat Tabel Dinamis</a></li>
+                            <li><a href="https://bandarlampungkota.bps.go.id/subject/28/pendidikan.html#subjekViewTab3" target="_blank">Lihat Tabel Statis</a></li>
+                            <li><a href="https://bandarlampungkota.bps.go.id/subject/28/pendidikan.html#subjekViewTab5" target="_blank">Lihat Tabel Dinamis</a></li>
                         </ul>
                     </div>
 
@@ -254,46 +176,9 @@ const Inflasi = () => {
                         </div>
                     </div>
 
-                    <div className="grafik">
-                        <p><b>Grafik</b></p>
-                        <Dropdown>
-                            <Dropdown.Toggle variant="sele" id="dropdown-basic">
-                                2019
-                            </Dropdown.Toggle>
-
-                            <Dropdown.Menu>
-                                <Dropdown.Item href="#/action-1">2019</Dropdown.Item>
-                                <Dropdown.Item href="#/action-2">2020</Dropdown.Item>
-                                <Dropdown.Item href="#/action-3">2021</Dropdown.Item>
-                            </Dropdown.Menu>
-                        </Dropdown>
-
-                        <div id='d3demo'>
-                            <svg ref={d3ChartBar}></svg>
-                        </div>
-                    </div>
-
-                    <div className="grafik">
-                        <p><b>Grafik</b></p>
-                        <Dropdown>
-                            <Dropdown.Toggle variant="sele" id="dropdown-basic">
-                                2019
-                            </Dropdown.Toggle>
-
-                            <Dropdown.Menu>
-                                <Dropdown.Item href="#/action-1">2019</Dropdown.Item>
-                                <Dropdown.Item href="#/action-2">2020</Dropdown.Item>
-                                <Dropdown.Item href="#/action-3">2021</Dropdown.Item>
-                            </Dropdown.Menu>
-                        </Dropdown>
-
-                        <div id='d3demo'>
-                            <svg ref={d3ChartLine2}></svg>
-                        </div>
-                    </div>
                     </div>
                 </div>
         </div>
     )
 }
-export default Inflasi
+export default MelekHuruf

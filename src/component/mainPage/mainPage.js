@@ -71,7 +71,7 @@ const MainPage = () => {
                         </Link>
 
                         <Link to={{
-                            pathname: "/indikator/Pengangguran",
+                            pathname: "/indikator/TPT",
                         }}  className="main-iconic">
                             <div className="icon-foto">
                                 <img src={require('../../asset/photos/indikator/pengangguran.png')} width="100%" height="100%"></img>
